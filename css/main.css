@@ -138,6 +138,7 @@ body {
 }
 .post {
     margin-bottom: 30px;
+    border: 1px solid #E8E8E8;
 }
 .post-header {
     padding: 23px 35px; 
@@ -147,7 +148,6 @@ body {
 }
 .post-body {
     background: #FFFFFF;
-    border: 1px solid #E8E8E8;
     padding: 35px;
     padding-bottom: 22px;
 }
@@ -424,13 +424,18 @@ a.new-post {
     width: 100%;
     margin-bottom: 30px;
 }
+.add-post-title,
+.add-post-text {
+    padding: 23px 31px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+}
 .add-post-title {
     font-family: "SFUIDisplay-Semibold", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    padding: 23px 31px;
     margin: 0;
     margin-bottom: 16px;
 }
@@ -442,7 +447,6 @@ a.new-post {
     font-size: 14px;
     line-height: 22px;
     color: #262626;
-    padding: 23px 31px 23px 31px;
     margin-bottom: 30px;
 }
 .post-buttons {
