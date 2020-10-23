@@ -1,0 +1,510 @@
+@font-face {
+    font-family: "SFUIDisplay-Regular";
+    src: local("SFUIDisplay-Regular"),
+         url(../fonts/SFUIDisplay-Regular.woff) format("woff"),
+         url(../fonts/SFUIDisplay-Regular.woff2) format("woff2");
+    font-weight: normal;
+  }
+@font-face {
+    font-family: "SFUIDisplay-Semibold";
+    src: local("SFUIDisplay-Semibold"),
+         url(../fonts/SFUIDisplay-Semibold.woff) format("woff"),
+         url(../fonts/SFUIDisplay-Semibold.woff2) format("woff2");
+    font-weight: bold;
+  }
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "SFUIDisplay-Regular", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #F5F5F5;
+}
+
+/* header */
+.header {
+    padding: 16px 0px;
+    background-color: orange;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.header-wraper {
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo a {
+    text-decoration: none;
+    font-family: "SFUIDisplay-Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.header-nav {
+    margin-left: 60px;
+    margin-right: auto;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header-menu-item:not(:last-child) {
+    margin-right: 15px;
+}
+.header-menu-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FAFAFA;
+}
+.input-group {
+    width: 237px;
+    height: 32px;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.search-input {
+    height: 100%;
+    width: 80%;
+    border: none;
+    padding: 0 12px;
+}
+.search-input::placeholder,
+.search-input::-moz-placeholder,
+.search-input:-ms-input-placeholder,
+.search-input::-ms-input-placeholder,
+.search-input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight: 100px;
+    line-height: 22px;
+    color: #BFBFBF;
+}
+.search-button {
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-button .icon {
+    width: 20px;
+    height: 20px;
+    fill: #FA8C16;
+}
+.menu-toggle {
+    display: none;
+}
+
+/* content */
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    margin-top: 94px;
+}
+.content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+/* posts */
+.posts {
+    max-width: 800px;
+    width: 68%;
+}
+.post {
+    margin-bottom: 30px;
+}
+.post-header {
+    padding: 23px 35px; 
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+}
+.post-body {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    padding: 35px;
+    padding-bottom: 22px;
+}
+.post-title {
+    font-family: "SFUIDisplay-Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626;
+    margin: 0;
+}
+.post-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+}
+.post-tag {
+    font-size: 14px;
+    line-height: 22px;
+    color: #BFBFBF;
+    text-decoration: none;
+    cursor: pointer;
+}
+.post-tag:not(:last-child) {
+    margin-right: 10px;
+}
+.post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAFAFA;
+    border-top: 1px solid #E8E8E8;
+    width: 100%;
+    padding: 13px 35px;
+}
+.post-buttons {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.post-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    margin-right: 29px;
+    cursor: pointer;
+}
+.post-button span {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+    margin-left: 5px;
+}
+.post-button .icon {
+    width: 20px;
+    height: 20px;
+    fill: #8C8C8C;
+    transition: fill 0.5s;
+}
+.post-button .icon:hover {
+    fill: black;
+}
+.post-author {
+    display: flex;
+}
+.autor-info {
+    margin-right: 6px;
+    text-align: right;
+}
+.author-nickname {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8C8C8C;   
+    text-decoration: none;
+    margin: 0; 
+}
+.author-nickname:hover {
+    text-decoration: underline;
+}
+.post-time {
+    font-size: 12px;
+    line-height: 20px;
+    color: #BFBFBF;
+    margin: 0;
+}
+.avatar {
+    height: 40px;
+    width: auto;
+    border: solid 2px gray;
+    border-radius: 50%;
+}
+
+/* sidebar */
+.sidebar {
+    max-width: 370px;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-menu {
+    border: 1px solid #E8E8E8;
+    margin-bottom: 20px;
+}
+.sidebar-header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAFAFA;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 0 25px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+    border-radius: 50%
+}
+.username {
+    text-decoration: none;
+    font-family: "SFUIDisplay-Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+}
+.username:hover {
+    text-decoration: underline;
+}
+.poweroff-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.poweroff-button .icon {
+    width: 24px;
+    height: 24px;   
+    fill: black;
+}
+.sidebar-nav {
+    background: #FFFFFF;
+}
+.sidebar-menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-menu-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    display: inline-block;
+    width: 100%;
+    padding: 16px 16px 16px 48px;
+}
+.sidebar-menu-link.active {
+    background: #FFFBE6;
+    border-right: solid 3px #FAAD14;
+    color: #FAAD14;
+}
+.sidebar-menu-link:hover {
+    background: #FFFBE6;
+    cursor: pointer;
+    color: #FAAD14;
+}
+.button {
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 13px 16px;
+}
+a.new-post {
+    text-decoration: none;
+}
+.send-button {
+    max-width: 370px;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #FAAD14;
+    border: none;
+}
+.button .icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.icon-fire {
+    fill: white;
+}
+.button-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: auto;
+    text-decoration: none;
+}
+.card {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 20px;
+}
+.card-header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAFAFA;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 0 25px;
+}
+.card-header-title {
+    font-family: "SFUIDisplay-Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;    
+}
+.card-content {
+    background: #FFFFFF;
+    padding: 25px;
+}
+.card-comment-title {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D48806;
+    margin: 0;
+}
+.card-comment-title:hover {
+    text-decoration: underline;
+}
+.card-comment-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    margin-top: 10px;
+}
+.advice {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 261px;
+    border: 1px solid #E8E8E8;
+    background:  url('../img/advice.png') no-repeat center center / cover;
+}
+.advice::before {
+    content: 'Advice';
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 26px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #C4C4C4;
+}
+.add-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.add-post-title {
+    font-family: "SFUIDisplay-Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 23px 31px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.add-post-title::placeholder {
+    color: black;
+}
+.add-post-text {
+    min-height: 362px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    padding: 23px 31px 23px 31px;
+    margin-bottom: 30px;
+}
+.post-buttons {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.post-buttons .send-button {
+    margin: 0 24px 0 0;
+}
+.button-outline {
+    max-width: 125px;
+    background: #FFFFFF;
+    border: 1px solid #FFC53D;
+    margin-left: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFC53D;
+}
+.button-outline span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFC53D;
+}
+.button-outline .icon {
+    fill: #FFC53D;
+}
+
+@media (max-width: 970px) {
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+       margin-left: 12px;
+    }
+    .menu-toggle span {
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+    }
+    .sidebar {
+        position: fixed;
+        z-index: 101;
+        top: 64px;
+        right: 0;
+        bottom: 0;
+        width: 320px;
+        background-color: #fff;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        overflow-y: auto;
+    }
+    .active {
+        transform: translateX(0);
+        transition: transform 0.2s;
+    }
+    .posts {
+        width: 100%;
+        margin: auto;
+    }
+}

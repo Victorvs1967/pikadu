@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikadu</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/main.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-wraper">
+            <div class="header-logo"><a href="/">Pikadu</a></div>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li class="header-menu-item">
+                        <a href="#link" class="header-menu-link">Свежее</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="#link" class="header-menu-link">Лучшее</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="#link" class="header-menu-link">Горячее</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="#link" class="header-menu-link">Подписки</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.header-nav -->
+            <div class="input-group search">
+                <input type="search" class="search-input" placeholder="Search text" />
+                <button class="search-button">
+                    <svg class="icon icon-search">
+                        <use xlink:href="./img/icons.svg#search" />
+                    </svg>
+                </button>
+            </div>
+            <!-- /.input-group -->
+            <a href="#link" class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- /.menu-toggel -->
+        </div>
+        <!-- /.header-wraper -->
+    </header>
+    <!-- /.header -->
+    <div class="container">
+        <div class="content">
+            <main class="posts">
+                <form action="#action" class="add-post">
+                    <input type="text" class="add-post-title" name="post-title" placeholder="Заголовок поста" />
+                    <!-- /.post-title -->
+                    <textarea class="add-post-text" name="post-text" id="text" placeholder="Текст поста"></textarea>
+                    <!-- /.post-text -->
+                    <div class="post-buttons">
+                        <button class="button send-button" type="submit" value="#send">
+                            <svg class="icon icon-fire">
+                                <use xlink:href="./img/icons.svg#fire" />
+                            </svg>
+                            <span class="button-text">Опубликовать пост</span>
+                        </button>    
+                        <button class="button button-outline" type="submit" value="#send">
+                            <svg class="icon icon-video">
+                                <use xlink:href="./img/icons.svg#video" />
+                            </svg>
+                            <span class="button-text">Video</span>
+                        </button>    
+                        <button class="button button-outline" type="submit" value="#send">
+                            <svg class="icon icon-foto">
+                                <use xlink:href="./img/icons.svg#foto" />
+                            </svg>
+                            <span class="button-text">Foto</span>
+                        </button>    
+                    </div>
+                    <!-- /.post-buttons -->
+                </form>
+                <!-- /.add-post -->
+            </main>
+            <!-- /,posts -->
+            <aside class="sidebar">
+                <div class="sidebar-menu">
+                    <div class="sidebar-header">
+                        <a href="#user" class="user">
+                            <img src="./img/avatar.jpg" alt="" class="user-avatar">
+                            <span class="username">islamovartem</span>
+                        </a>
+                        <button class="poweroff-button">
+                            <svg class="icon icon-poweroff">
+                                <use xlink:href="./img/icons.svg#poweroff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- /.sidebar-header -->
+                    <nav class="sidebar-nav">
+                        <ul class="sidebar-menu-items">
+                            <li class="sidebar-menu-item">
+                                <a href="#link" class="sidebar-menu-link">Ответы</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a href="#link" class="sidebar-menu-link">Комментарии</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a href="#link" class="sidebar-menu-link active">Оценки</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a href="#link" class="sidebar-menu-link">Сохраненное</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a href="#link" class="sidebar-menu-link">Подписки</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a href="#link" class="sidebar-menu-link">Заметки</a>
+                            </li>
+                            <li class="sidebar-menu-item">
+                                <a href="#link" class="sidebar-menu-link">Игнор-лист</a>
+                            </li>
+                        </ul>
+                    </nav>    
+                </div>
+                <!-- /.sidebar-menu -->
+                <a href="#adv" class="advice"></a>
+                <!-- /.advice -->
+
+            </aside>
+            <!-- /.sidebar -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.container -->
+</body>
+</html>
